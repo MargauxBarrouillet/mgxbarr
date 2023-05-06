@@ -95,6 +95,12 @@ body{
     margin-top: 1vh;
     font-size: 22px;
 }
+.date{
+    display: flex;
+    justify-content: end;
+    margin-right: 2vh;
+    font-size: 10px;
+}
 .links a{
     text-decoration: none;
     color: #f5f5dc;
@@ -159,14 +165,13 @@ body{
 }
 
 .logo_container {
-    display: none;
     position: fixed;
     top: 2vh;
     right: 2vh;
     text-align: end;
 }
 #logo{
-    width: 10%;
+    width: 5%;
 }
 /*----------RESPONSIVE----------*/
 
@@ -210,12 +215,21 @@ body{
     .title_project{
         font-size: 40px;
     }
+    .date{
+        font-size: 25px;
+        display: none;
+    }
     .logo_container{
         display: block;
         text-align: start;
         left: 2vh;
         top:unset;
         bottom: 2vh;
+    }
+    #logo{
+        width: 7%;
+        margin-bottom: 1vh;
+        margin-right: 1vh;
     }
     .links a{
         font-size: 25px;
@@ -265,12 +279,21 @@ body{
     .title_project{
         font-size: 40px;
     }
+    .date{
+        font-size: 25px;
+        display: none;
+    }
     .logo_container{
         display: block;
         text-align: start;
         left: 2vh;
         top:unset;
         bottom: 2vh;
+    }
+    #logo{
+        width: 7%;
+        margin-bottom: 1vh;
+        margin-right: 1vh;
     }
     .links a{
         font-size: 25px;

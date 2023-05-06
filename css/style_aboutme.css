@@ -28,15 +28,31 @@ body{
 .content_middle{
     display: flex;
     font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
     font-weight:500;
     font-style: italic;
     align-items: center;
     height:100vh;
     width: 85vw;
     justify-content: center;
-    animation: smooth 1s ease;
+    flex-direction: row;
 }
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    width: 30vw;
+    margin-right: 4vh;
+}
+
+.text{
+    margin-left: 3vh;
+}
+.box{
+    margin-bottom: 5vh;
+}
+
 
 .paragraphs-container{
     display: flex;
@@ -77,6 +93,9 @@ body{
 #logo{
     width: 5%;
 }
+.responsive{
+    display: none;
+}
 
 /*----------RESPONSIVE----------*/
 
@@ -113,6 +132,32 @@ body{
         margin-bottom: 1vh;
         margin-right: 1vh;
     }
+    
+    .content_middle{
+        flex-direction: column;
+        font-size: 25px;
+        max-height: 80vh;
+        overflow: scroll;
+        scrollbar-width: auto;
+        scrollbar-color: #f5f5dc #757474;
+    }
+    .box{
+        margin-bottom: 5vh;
+        margin-left: 2vh;
+        margin-right: 2vh;
+    }
+    .column{
+        display: block;
+        height: 58vh;
+        width: 80vw;
+        margin-right: unset;
+    }
+    .noresponsive{
+        display: none;
+    }
+    .responsive{
+        display: block;
+    }
 }
 
 /* TABLET */
@@ -148,4 +193,31 @@ body{
         margin-bottom: 1vh;
         margin-right: 1vh;
     }
+
+    .content_middle{
+        flex-direction: column;
+        font-size: 25px;
+        max-height: 80vh;
+        overflow: scroll;
+        scrollbar-width: auto;
+        scrollbar-color: #f5f5dc #757474;
+    }
+    .box{
+        margin-bottom: 5vh;
+        margin-left: 2vh;
+        margin-right: 2vh;
+    }
+    .column{
+        display: block;
+        height: 58vh;
+        width: 80vw;
+        margin-right: unset;
+    }
+    .noresponsive{
+        display: none;
+    }
+    .responsive{
+        display: block;
+    }
+
 }

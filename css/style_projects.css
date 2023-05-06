@@ -1,13 +1,3 @@
-
-@keyframes smooth {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 body{
     background-color: #1c1c1c; 
     color: #f5f5dc; 
@@ -199,9 +189,9 @@ body{
         flex-direction: row;
     }
     .paragraphs-container a{
+        display: inline;
         margin-right: 2vh;
         margin-left: 2vh;
-        display: inline;
         font-size: 40px;
     }
     .nav-line{
@@ -211,14 +201,13 @@ body{
         margin: 0;
         flex-basis: 100%;
         justify-content: center;
-        text-align: center;
+        margin-left: 10vw;
     }
     .row{
         flex-wrap: wrap;
     }
     .slides{
         display: block;
-        font-size: 25px;
     }
 
     .description_project{
@@ -237,6 +226,12 @@ body{
         left: 2vh;
         top:unset;
         bottom: 2vh;
+    }
+    .links a{
+        font-size: 25px;
+    }
+    .prev, .next{
+        font-size: 40px;
     }
 }
 
@@ -293,5 +288,8 @@ body{
     }
     .links a{
         font-size: 25px;
+    }
+    .prev, .next{
+        font-size: 40px;
     }
 }

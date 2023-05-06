@@ -1,0 +1,156 @@
+/*Cormorant font*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital@1&display=swap');
+/*Montserrat font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+
+@keyframes smooth {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body{
+    background-color: #1c1c1c; 
+    color: #f5f5dc; 
+    user-select: none;
+}
+
+.content{
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.content_left{
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 27px;
+    font-weight: 500;
+    height:100vh;
+    width: 15vw;
+    justify-content: center;
+    position: relative; 
+}
+
+
+.content_middle{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight:500;
+    font-style: italic;
+    align-items: center;
+    height:100vh;
+    width: 85vw;
+    justify-content: center;
+    animation: smooth 1s ease;
+}
+
+.paragraphs-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraphs-container a{
+    text-decoration: none;
+    color: #f5f5dc;
+    /*transform: rotate(-90deg);*/
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+.paragraphs-container a:hover{
+    transform: scale(1.05); /* agrandit légèrement la box au survol */
+}
+
+.nav-line {
+    width: 1px;
+    height: 30vh;
+    background-color:#f5f5dc;
+}
+#notcurrent{
+    opacity: .3;
+}
+#notcurrent:hover{
+    opacity: 1;
+}
+
+.logo_container {
+    display: none;
+    position: fixed;
+    top: 2vh;
+    right: 2vh;
+    text-align: end;
+}
+#logo{
+    width: 10%;
+}
+
+/*----------RESPONSIVE----------*/
+
+/* PHONE */
+@media screen and (max-width: 767px) { 
+    .content{
+        flex-direction: column;
+    }
+    .content_left{
+        height: 40vh;
+        width: 100vw;
+    }
+    .paragraphs-container{
+        flex-direction: row;
+    }
+    .paragraphs-container a{
+        display: inline;
+        margin-right: 2vh;
+        margin-left: 2vh;
+        font-size: 40px;
+    }
+    .nav-line{
+        display: none;
+    }
+    .logo_container{
+        display: block;
+        text-align: start;
+        left: 2vh;
+        top:unset;
+        bottom: 2vh;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 767px) and (max-width: 1023px) {  
+    .content{
+        flex-direction: column;
+    }
+    .content_left{
+        height: 40vh;
+        width: 100vw;
+    }
+    .paragraphs-container{
+        flex-direction: row;
+    }
+    .paragraphs-container a{
+        display: inline;
+        margin-right: 2vh;
+        margin-left: 2vh;
+        font-size: 40px;
+    }
+    .nav-line{
+        display: none;
+    }
+    .logo_container{
+        display: block;
+        text-align: start;
+        left: 2vh;
+        top:unset;
+        bottom: 2vh;
+    }
+}

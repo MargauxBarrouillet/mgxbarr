@@ -1,17 +1,3 @@
-/*Cormorant font*/
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital@1&display=swap');
-/*Montserrat font*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
-
-@keyframes smooth {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 body{
     background-color: #1c1c1c; 
     color: #f5f5dc; 
@@ -83,14 +69,13 @@ body{
 }
 
 .logo_container {
-    display: none;
     position: fixed;
     top: 2vh;
     right: 2vh;
     text-align: end;
 }
 #logo{
-    width: 10%;
+    width: 5%;
 }
 
 /*----------RESPONSIVE----------*/
@@ -123,6 +108,11 @@ body{
         top:unset;
         bottom: 2vh;
     }
+    #logo{
+        width: 7%;
+        margin-bottom: 1vh;
+        margin-right: 1vh;
+    }
 }
 
 /* TABLET */
@@ -152,5 +142,10 @@ body{
         left: 2vh;
         top:unset;
         bottom: 2vh;
+    }
+    #logo{
+        width: 7%;
+        margin-bottom: 1vh;
+        margin-right: 1vh;
     }
 }

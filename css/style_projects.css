@@ -95,12 +95,6 @@ body{
     margin-top: 1vh;
     font-size: 22px;
 }
-.date{
-    display: flex;
-    justify-content: end;
-    margin-right: 2vh;
-    font-size: 10px;
-}
 .links a{
     text-decoration: none;
     color: #f5f5dc;
@@ -216,10 +210,6 @@ body{
     .title_project{
         font-size: 40px;
     }
-    .date{
-        font-size: 25px;
-        display: none;
-    }
     .logo_container{
         display: block;
         text-align: start;
@@ -274,10 +264,6 @@ body{
     }
     .title_project{
         font-size: 40px;
-    }
-    .date{
-        font-size: 25px;
-        display: none;
     }
     .logo_container{
         display: block;

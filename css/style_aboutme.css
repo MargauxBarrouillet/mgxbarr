@@ -297,6 +297,8 @@ input.check-toggle-round-flat:checked + label:after {
         top:unset;
         bottom:4vh;
         z-index: 10;
+        scale: 2;
+        margin-right: 2vh;
     }
 }
 
@@ -370,6 +372,8 @@ input.check-toggle-round-flat:checked + label:after {
         top:unset;
         bottom:4vh;
         z-index: 10;
+        scale: 2;
+        margin-right: 2vh;
     }
     
 }

@@ -34,7 +34,7 @@ body{
     align-items: center;
     height:100vh;
     width: 85vw;
-    justify-content: center;
+    justify-content: center;  
 }
 
 .paragraphs-container{
@@ -166,8 +166,8 @@ body{
 
 .logo_container {
     position: fixed;
-    top: 2vh;
-    right: 2vh;
+    bottom: 2vh; 
+    right: 4vh;
     text-align: end;
 }
 #logo{

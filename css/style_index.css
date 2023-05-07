@@ -23,6 +23,7 @@ body{
     width: 15vw;
     justify-content: center;
     position: relative; 
+    font-weight: 300;
 }
 
 
@@ -31,7 +32,7 @@ body{
     display: flex;
     font-family: 'Montserrat', sans-serif;
     font-size: 50px;
-    font-weight:500;
+    font-weight:400;
     font-style: italic;
     align-items: center;
     height:100vh;
@@ -39,6 +40,7 @@ body{
     justify-content: center;
     flex-direction: column;
     text-align:end;
+    
 }
 
 .logo_container {
@@ -106,6 +108,12 @@ body{
     opacity: 1;
 }
 
+#link_cy{ 
+    text-decoration: none;
+    font-weight: bold;
+    color:#f5f5dc;
+}
+
 
 /*----------RESPONSIVE----------*/
 
@@ -117,6 +125,7 @@ body{
     .content_left{
         height: 40vh;
         width: 100vw;
+        font-weight: 400; 
     }
     .paragraphs-container{
         flex-direction: row;
@@ -157,6 +166,7 @@ body{
     .content_left{
         height: 40vh;
         width: 100vw;
+        font-weight: 400; 
     }
     .paragraphs-container{
         flex-direction: row;

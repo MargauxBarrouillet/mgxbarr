@@ -279,7 +279,7 @@ input.check-toggle-round-flat:checked + label:after {
     }
     .column{
         display: block;
-        height: 58vh;
+        height: 50vh;
         width: 80vw;
         margin-right: unset;
     }
@@ -295,7 +295,6 @@ input.check-toggle-round-flat:checked + label:after {
     #switch-container{
         height:unset;
         top:unset;
-        bottom:4vh;
     }
 }
 
@@ -351,7 +350,7 @@ input.check-toggle-round-flat:checked + label:after {
     }
     .column{
         display: block;
-        height: 55vh;
+        height: 50vh;
         width: 80vw;
         margin-right: unset;
     }
@@ -367,7 +366,6 @@ input.check-toggle-round-flat:checked + label:after {
     #switch-container{
         height:unset;
         top:unset;
-        bottom:4vh;
     }
     
 }

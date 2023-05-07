@@ -279,7 +279,7 @@ input.check-toggle-round-flat:checked + label:after {
     }
     .column{
         display: block;
-        height: 40vh;
+        height: 45vh;
         width: 80vw;
         margin-right: unset;
     }
@@ -354,7 +354,7 @@ input.check-toggle-round-flat:checked + label:after {
     }
     .column{
         display: block;
-        height: 40vh;
+        height: 45vh;
         width: 80vw;
         margin-right: unset;
     }

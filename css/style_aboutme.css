@@ -239,9 +239,6 @@ input.check-toggle-round-flat:checked + label:after {
         width: 100vw;
         font-weight: 400;
     }
-    .content_middle{
-        height:60vh;
-    }
     .paragraphs-container{
         flex-direction: row;
     }
@@ -271,10 +268,11 @@ input.check-toggle-round-flat:checked + label:after {
     .content_middle{
         flex-direction: column;
         font-size: 25px;
-        max-height: 80vh;
+        height:60vh;
         overflow: scroll;
         scrollbar-width: auto;
         scrollbar-color: #f5f5dc #757474;
+        justify-content:unset;
     }
     .box{
         margin-bottom: 5vh;
@@ -345,11 +343,11 @@ input.check-toggle-round-flat:checked + label:after {
     .content_middle{
         flex-direction: column;
         font-size: 25px;
-        max-height: 80vh;
         overflow: scroll;
         scrollbar-width: auto;
         scrollbar-color: #f5f5dc #757474;
         height:60vh;
+        justify-content:unset;
     }
     .box{
         margin-bottom: 5vh;

@@ -3,6 +3,7 @@ body{
     background-color: #1c1c1c; 
     color: #f5f5dc; 
     user-select: none;
+    overflow: hidden; 
 }
 
 .content{
@@ -123,9 +124,12 @@ body{
         flex-direction: column;
     }
     .content_left{
-        height: 40vh;
+        height: 20vh;
         width: 100vw;
         font-weight: 400; 
+    }
+    .content_middle{
+        height:60vh;
     }
     .paragraphs-container{
         flex-direction: row;
@@ -164,9 +168,12 @@ body{
         flex-direction: column;
     }
     .content_left{
-        height: 40vh;
+        height: 20vh;
         width: 100vw;
         font-weight: 400; 
+    }
+    .content_middle{
+        height:60vh;
     }
     .paragraphs-container{
         flex-direction: row;

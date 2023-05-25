@@ -39,6 +39,13 @@ body{
     flex-direction: row;
 }
 
+#download{
+        bottom:4vh; 
+        right: 38%; 
+        top : unset;
+        font-size: 30px;
+}
+
 .column{
     display: flex;
     flex-direction: column;
@@ -274,6 +281,12 @@ input.check-toggle-round-flat:checked + label:after {
         scrollbar-color: #f5f5dc #757474;
         justify-content:unset;
     }
+    #download{
+        bottom:4vh; 
+        right: 38%; 
+        top : unset;
+        font-size: 30px;
+    }
     .box{
         margin-bottom: 5vh;
         margin-left: 2vh;
@@ -348,6 +361,12 @@ input.check-toggle-round-flat:checked + label:after {
         scrollbar-color: #f5f5dc #757474;
         height:60vh;
         justify-content:unset;
+    }
+    #download{
+        bottom:4vh; 
+        right: 38%; 
+        top : unset;
+        font-size: 30px;
     }
     .box{
         margin-bottom: 5vh;

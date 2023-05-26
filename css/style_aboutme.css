@@ -40,10 +40,13 @@ body{
 }
 
 #download{
-        bottom:4vh; 
-        right: 38%; 
-        top : unset;
-        font-size: 30px;
+    position: absolute;
+    top:12vh; 
+    right: 2vh;
+    text-decoration: none;
+    color: #f5f5dc;
+    cursor: pointer;
+    z-index: 15;
 }
 
 .column{

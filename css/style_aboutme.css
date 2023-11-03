@@ -39,7 +39,7 @@ body{
     flex-direction: row;
 }
 
-#download{
+.download{
     position: absolute;
     top:12vh; 
     right: 2vh;

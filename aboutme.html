@@ -25,7 +25,8 @@
             </div>
         </div>
         <div class="content_middle">
-            <a href="assets/CV.pdf" download id="download">Télécharger le CV</a>
+            <a href="assets/CV.pdf" download id='cv_fr' style='display:none' class="download">Télécharger le CV</a>
+            <a href="assets/CV_ANGLAIS.pdf" download id='cv_eng' class="download">Download Resume</a>
             <div id="en1">
                 <div class="column">
                     <div class="box">
@@ -288,12 +289,16 @@
             document.getElementById("fr1").style.display = "block";
             document.getElementById("en2").style.display = "none"; 
             document.getElementById("fr2").style.display = "block";
+            document.getElementById("cv_fr").style.display = "block";
+            document.getElementById("cv_eng").style.display = "none";
             langue=1;
         }else{
             document.getElementById("en1").style.display = "block"; 
             document.getElementById("fr1").style.display = "none";
             document.getElementById("en2").style.display = "block"; 
             document.getElementById("fr2").style.display = "none";
+            document.getElementById("cv_fr").style.display = "none";
+            document.getElementById("cv_eng").style.display = "block";
             langue=0;
         }
     }

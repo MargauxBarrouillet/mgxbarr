@@ -284,11 +284,14 @@ input.check-toggle-round-flat:checked + label:after {
         scrollbar-color: #f5f5dc #757474;
         justify-content:unset;
     }
-    #download{
-        bottom:4vh; 
-        right: 38%; 
-        top : unset;
-        font-size: 30px;
+    .download{
+        font-size : 18px; 
+        height:unset;
+        top:unset;
+        bottom:4.5vh;
+        z-index: 10;
+        scale: 2;
+        margin-right: 17vh;
     }
     .box{
         margin-bottom: 5vh;
@@ -365,11 +368,14 @@ input.check-toggle-round-flat:checked + label:after {
         height:60vh;
         justify-content:unset;
     }
-    #download{
-        bottom:4vh; 
-        right: 38%; 
-        top : unset;
-        font-size: 30px;
+    .download{
+        font-size : 18px; 
+        height:unset;
+        top:unset;
+        bottom:4.5vh;
+        z-index: 10;
+        scale: 2;
+        margin-right: 17vh;
     }
     .box{
         margin-bottom: 5vh;

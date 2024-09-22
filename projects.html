@@ -33,12 +33,12 @@
                           <div class="box">
                             <div class="title_project">Image Morphing</div>
                             <div class="description_project"><p>Made with Java.</p> </div>
-                            <div class="links"><a href="#" target="_blank">More info</a><a href="https://github.com/MgxBarr/Morphing" target="_blank">Code</a></div>
+                            <div class="links"><a href="#" class="more-info" data-modal-id="modal1">More info</a><a href="https://github.com/MgxBarr/Morphing" target="_blank">Code</a></div>
                           </div>
                           <div class="box">
                             <div class="title_project">Dating Website</div>
                             <div class="description_project"><p>Made with PHP, CSS and SQL.</p> </div>
-                            <div class="links"><a href="#" target="_blank">More info</a><a href="https://github.com/MgxBarr/SmashOrPass" target="_blank">Code</a></div>
+                            <div class="links"><a href="#" class="more-info" data-modal-id="modal2">More info</a><a href="https://github.com/MgxBarr/SmashOrPass" target="_blank">Code</a></div>
                           </div>
                       </div>
                     </div>
@@ -48,12 +48,12 @@
                           <div class="box">
                               <div class="title_project">Restorative Justice Website</div>
                               <div class="description_project"><p>Made with PHP, CSS and JS.</p> </div>
-                              <div class="links"><a href="https://mgxbarr.github.io/#" target="_blank">More info</a><a href="https://github.com/MgxBarr/JRestaurative" target="_blank">Code</a></div>
+                              <div class="links"><a href="#" class="more-info" data-modal-id="modal3">More info</a><a href="https://github.com/MgxBarr/JRestaurative" target="_blank">Code</a></div>
                           </div>
                           <div class="box">
                             <div class="title_project">Meteorological Data Processing</div>
                             <div class="description_project"><p>Made with C.</p> </div>
-                            <div class="links"><a href="https://mgxbarr.github.io/#" target="_blank">More info</a><a href="https://github.com/MgxBarr/CYMeteo" target="_blank">Code</a></div>
+                            <div class="links"><a href="#" class="more-info" data-modal-id="modal4">More info</a><a href="https://github.com/MgxBarr/CYMeteo" target="_blank">Code</a></div>
                           </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                         <div class="box">
                             <div class="title_project">Image traitement PPM</div>
                             <div class="description_project"><p>Made with C.</p> </div>
-                            <div class="links"><a href="https://mgxbarr.github.io/#" target="_blank">More info</a><a href="https://github.com/MgxBarr/Wooper" target="_blank">Code</a></div>
+                            <div class="links"><a href="#" class="more-info" data-modal-id="modal5">More info</a><a href="https://github.com/MgxBarr/Wooper" target="_blank">Code</a></div>
                         </div>
                         <div class="box" id="coming_soon">
                           <div class="title_project">Coming soon ...</div>
@@ -110,6 +110,86 @@
                     slides[slideIndex-1].style.display = "block";  
                     dots[slideIndex-1].className += " active";
                   }
+                  </script>
+
+                <!-- Modals -->
+                  <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-modal-id="modal1">&times;</span>
+                        <h2>Image morphing app</h2>
+                        <h5>Made with Java | June 2024</h5>
+                        <div class="modal-body">
+                          <p>This java application was coded as part of a second semester project in the first year of engineering school.<br>
+                            <br>The aim is to discover what morphing is. To do this, the project was divided into 3 parts, in order to gradually approach this notion. 
+                            <br>In the first, we had to morph simple plain shapes using broken lines. Then a morphing of rounded shapes, using splines. And finally, image morphing using the Delaunay mesh. 
+                            <br>All of this was implemented in a JavaFX interface so that the various methods could be tested.</p>
+                           
+                        
+                        </div>
+                    </div>
+                  </div>
+
+                  <div id="modal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-modal-id="modal2">&times;</span>
+                        <h2>Dating Website</h2>
+                        <h5>Made with PHP, CSS and SQL. | May 2024</h5>
+                        <p>This website has been coded for the final exam of the second semester web development module. <br> 
+                          <br> 
+
+                        </p>
+                    </div>
+                  </div>
+
+                  <div id="modal3" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-modal-id="modal3">&times;</span>
+                        <h2>Restorative Justice Website</h2>
+                        <p>Made with PHP, CSS and JS.</p>
+                    </div>
+                  </div>
+
+                  <div id="modal4" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-modal-id="modal4">&times;</span>
+                        <h2>Metereological Data Processing</h2>
+                        <p>Made with C.</p>
+                    </div>
+                  </div>
+
+                  <div id="modal5" class="modal">
+                    <div class="modal-content">
+                        <span class="close" data-modal-id="modal5">&times;</span>
+                        <h2>PPM Image Processing</h2>
+                        <p>Made with C.</p>
+                    </div>
+                  </div>
+
+                <script>
+                    // Ouvrir le modal lorsque le bouton More info est cliqué
+                    document.querySelectorAll('.more-info').forEach(button => {
+                      button.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        const modalId = this.getAttribute('data-modal-id');
+                        document.getElementById(modalId).style.display = 'block';
+                      });
+                    });
+
+                    // Fermer le modal lorsque le bouton de fermeture est cliqué
+                    document.querySelectorAll('.close').forEach(span => {
+                      span.addEventListener('click', function() {
+                        const modalId = this.getAttribute('data-modal-id');
+                        document.getElementById(modalId).style.display = 'none';
+                      });
+                    });
+
+                    // Fermer le modal lorsque l'utilisateur clique en dehors du modal
+                    window.addEventListener('click', function(event) {
+                      if (event.target.classList.contains('modal')) {
+                        event.target.style.display = 'none';
+                      }
+                    });
+
                   </script>
 
             </div>  

@@ -292,6 +292,11 @@ body{
     .prev, .next{
         font-size: 40px;
     }
+
+    .modal-content{
+        margin : 85% auto;
+        max-width: 800px;
+    }
 }
 
 /* TABLET */
@@ -358,5 +363,10 @@ body{
     }
     .prev, .next{
         font-size: 40px;
+    }
+
+    .modal-content{
+        margin : 85% auto;
+        max-width: 800px;
     }
 }

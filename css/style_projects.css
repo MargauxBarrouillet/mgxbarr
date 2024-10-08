@@ -294,8 +294,9 @@ body{
     }
 
     .modal-content{
-        margin : 85% auto;
+        margin : 75% auto;
         max-width: 800px;
+        height : 500px; 
     }
 }
 
@@ -366,7 +367,8 @@ body{
     }
 
     .modal-content{
-        margin : 85% auto;
+        margin : 75% auto;
         max-width: 800px;
+        height : 500px;
     }
 }

@@ -313,7 +313,9 @@ body{
     .slides{
         display: flex;
     }
-
+    .title_project {
+        text-align: center;
+    }
     .description_project{
         font-size: 1.5vh;
     }

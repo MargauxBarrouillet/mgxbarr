@@ -221,23 +221,31 @@ body{
     max-height: calc(85% - 60px); /* Adjust for header and close button */
     overflow-y: auto; /* Enable vertical scroll if needed */
     padding-right: 15px; /* Add some padding to avoid scrollbar overlap */
+    overflow-x: hidden;
 }
 
-/*
-//image principale du carousel
+
+/*image principale du carousel*/
 .carousel-main-image img {
-    width: 100%;
-    height: auto;
+    width: auto; 
+    height: 100%;
     padding: 10px;
     border-radius: 10px;
-    //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
 }
 
-//miniatures en ligne
+.carousel-main-image {
+    height : 35vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*miniatures en ligne*/
 .carousel-thumbnails {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin: 2vh 0;
 }
 
 .carousel-thumbnails img {
@@ -249,13 +257,13 @@ body{
     transition: transform 0.3s ease;
 }
 
-//agrandissement miniatures au survol
+/*agrandissement miniatures au survol*/
 .carousel-thumbnails img:hover {
     transform: scale(1.1);
-    //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);*/
 }
 
-*/
+
 
 /*----------RESPONSIVE----------*/
 
